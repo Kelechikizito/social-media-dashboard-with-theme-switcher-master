@@ -1,0 +1,168 @@
+body {
+    height: fit-content;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    background-image: linear-gradient(to bottom, hsl(225, 100%, 98%) 0%, hsl(225, 100%, 98%) 32%, white 32%, white 68%);
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-weight: bolder;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    margin: 2rem 7.5%;
+}
+
+.grid-item:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid-item:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.grid-item:nth-child(4) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;    
+}
+
+.grid-item:nth-child(1) h2 {
+    margin-bottom: 0;
+}
+
+.grid-container p {
+    margin-top: 0.5rem;
+}
+
+.grid-item:nth-child(2) > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.5rem; 
+    background-color: hsl(227, 47%, 96%);
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    border-top: 0.5rem solid;
+}
+
+.grid-item:nth-child(2) > div:nth-child(1) {
+    border-color: hsl(208, 92%, 53%);
+}
+
+.grid-item:nth-child(2) > div:nth-child(2) {
+    border-color: hsl(203, 89%, 53%);
+}
+
+.grid-item:nth-child(2) > div:nth-child(3) {
+    border-image:  linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    border-image-slice: 1;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+} 
+
+.grid-item:nth-child(2) > div:nth-child(4) {
+    border-color:  hsl(348, 97%, 39%);
+}
+
+.grid-item:nth-child(2) .follower-change {
+    font-size: smaller;
+}
+
+.grid-item:nth-child(4) > div {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(227, 47%, 96%);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+}
+
+
+.grid-item:nth-child(4) > div > div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+.grid-item:nth-child(4) .follower-change {
+    margin: 0 0 0 auto;
+    align-self: flex-end;
+    font-size: smaller;
+}
+
+.grid-item:nth-child(4) h6 {
+    margin-top: 0;
+    font-size: small;
+    opacity: 0.8;
+}
+
+.handles {
+    margin-bottom: 0;
+    margin-top: 1.5rem;
+    font-size: small;
+    display: flex;
+    gap: 0.5rem;
+    padding: 0;
+}
+
+.users {
+    text-transform: uppercase;
+    font-size: medium;
+    font-weight: lighter;
+    letter-spacing: 0.1rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.impressions {
+    margin: 0 auto 0 0;
+}
+
+.toggle {
+    align-self: center;
+}
+
+.toggle:after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: gray;
+    top: 1px; 
+    left: 1px;
+    transition:  all 0.5s;
+}
+
+.green {
+    color: hsl(163, 72%, 41%);
+}
+
+.red {
+    color: hsl(356, 69%, 56%);
+}
+
+.follower-change  {
+    display: flex;
+    gap: 0.2rem;
+    font-weight: bolder;
+}
+
+.follower-change span {
+    height: initial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

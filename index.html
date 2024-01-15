@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
@@ -16,72 +20,123 @@
 </head>
 <body>
 
-  Social Media Dashboard
-  Total Followers: 23,004
+  <div class="grid-container">
+    
+    <div class="grid-item">
+      <div>
+        <h2>Social Media Dashboard</h2>
+        <p>Total Followers: 23,004</p>
+      </div>
+      <div class="toggle">
+        <span>Dark Mode</span>
+        <input type="checkbox" name="toggle-btn" id="toggleBtn">
+      </div>
+    </div>
 
-  Dark Mode
+    <div class="grid-item">
+      <div>
+        <p class="handles"><span><img src="./images/icon-facebook.svg" alt=""></span>@nathanf</p>
+        <h1>1987</h1>
+        <h6 class="users">Followers</h6>
+        <p class="follower-change green"><span class="icon-up-dwn"><img src="./images/icon-up.svg" alt=""></span> 12 Today</p>
+      </div>
 
-  
+      <div>
+        <p class="handles"><span><img src="./images/icon-twitter.svg" alt=""></span>@nathanf</p>
+        <h1>1044</h1>
+        <h6 class="users">Followers</h6>
+        <p class="follower-change green"><span class="icon-up-dwn"><img src="./images/icon-up.svg" alt=""></span>99 Today</p>
+      </div>
 
-  @nathanf
-  1987
-  Followers
-  12 Today
+      <div>
+        <p class="handles"><span><img src="./images/icon-instagram.svg" alt=""></span>@realnathanf</p>
+        <h1>11k</h1>
+        <h6 class="users">Followers</h6>
+        <p class="follower-change green"><span class="icon-up-dwn"><img src="./images/icon-up.svg" alt=""></span>1099 Today</p>
+      </div>
 
-  @nathanf
-  1044
-  Followers
-  99 Today
+      <div>
+        <p class="handles"><span><img src="./images/icon-youtube.svg" alt=""></span>Nathan F.</p>
+        <h1>8239</h1>
+        <h6 class="users">Subscribers</h6>
+        <p class="follower-change red"><span class="icon-up-dwn"><img src="./images/icon-down.svg" alt="" srcset=""></span>144 Today</p>
+      </div>
+    </div>
 
-  @realnathanf
-  11k
-  Followers
-  1099 Today
+    <div class="grid-item"><h3>Overview - Today</h3></div>
 
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
+    <div class="grid-item">
+      <div>
+        <div><h6>Page Views</h6> <span><img src="./images/icon-facebook.svg" alt=""></span></div>
+        <div>
+          <h2 class="impressions">87</h2>
+          <p class="follower-change green"><span class="icon-up-dwn"><img src="./images/icon-up.svg" alt=""></span>3%</p>
+        </div>
+      </div>
 
+      <div>
+        <div><h6>Likes</h6> <span><img src="./images/icon-facebook.svg" alt=""></span></div>
+        <div>
+          <h2 class="impressions">52</h2>
+          <p class="follower-change red"><span class="icon-up-dwn"><img src="./images/icon-down.svg" alt=""></span>2%</p>
+        </div>
+      </div>
 
+      <div>
+        <div><h6>Likes</h6> <span><img src="./images/icon-instagram.svg" alt=""></span></div>
+        <div>
+          <h2 class="impressions">5462</h2>
+          <p class="follower-change green"><span class="icon-up-dwn"><img src="./images/icon-up.svg" alt=""></span>2257%</p>
+        </div>
+      </div>
 
-  Overview - Today
+      <div>
+        <div><h6>Profile Views</h6> <span><img src="./images/icon-instagram.svg" alt=""></span></div>
+        <div>
+          <h2 class="impressions">52k</h2>
+          <p class="follower-change green"><span class="icon-up-dwn"><img src="./images/icon-up.svg" alt=""></span>1375%</p>
+        </div>
+      </div>
 
-  Page Views
-  87
-  3%
+      <div>
+        <div><h6>Retweets</h6> <span><img src="./images/icon-twitter.svg" alt=""></span></div>
+        <div>
+          <h2 class="impressions">117</h2>
+          <p class="follower-change green"><span class="icon-up-dwn"><img src="./images/icon-up.svg" alt=""></span>303%</p>
+        </div>
+      </div>
 
-  Likes
-  52
-  2%
+      <div>
+        <div><h6>Likes</h6> <span><img src="./images/icon-twitter.svg" alt=""></span></div>
+        <div>
+          <h2 class="impressions">507</h2>
+          <p class="follower-change green"><span class="icon-up-dwn"><img src="./images/icon-up.svg" alt=""></span>553%</p>
+        </div>
+      </div>
 
-  Likes
-  5462
-  2257%
+      <div>
+        <div><h6>Likes</h6> <span><img src="./images/icon-youtube.svg" alt=""></span></div>
+        <div>
+          <h2 class="impressions">107</h2>
+          <p class="follower-change red"><span class="icon-up-dwn"><img src="./images/icon-down.svg" alt=""></span>19%</p>
+        </div>
+      </div>
 
-  Profile Views
-  52k
-  1375%
+      <div>
+        <div><h6>Total Views</h6> <span><img src="./images/icon-youtube.svg" alt=""></span></div>
+        <div>
+          <h2 class="impressions">1407</h2>
+          <p class="follower-change red"><span class="icon-up-dwn"><img src="./images/icon-down.svg" alt=""></span>12%</p>
+        </div>
+      </div>
+    </div>
 
-  Retweets
-  117
-  303%
+  </div>
 
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/kelechikizito">kelechi Kizito Ugwu</a>.
   </div>
 </body>
 </html>
